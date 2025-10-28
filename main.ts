@@ -22,7 +22,7 @@ function TracSonar () {
 function Turn_Right () {
     Motor_Stop()
     iBIT.Spin(ibitSpin.Right, Turn_Speed)
-    basic.pause(8500 / Turn_Speed)
+    basic.pause(9500 / Turn_Speed)
     if (Turn_Speed >= 60) {
         iBIT.Spin(ibitSpin.Right, 50)
     }
@@ -129,7 +129,7 @@ function TracJC_Slow_Stop () {
 function Turn_Left () {
     Motor_Stop()
     iBIT.Spin(ibitSpin.Left, Turn_Speed)
-    basic.pause(8500 / Turn_Speed)
+    basic.pause(9500 / Turn_Speed)
     if (Turn_Speed >= 60) {
         iBIT.Spin(ibitSpin.Left, 50)
     }
@@ -331,31 +331,31 @@ function Initial_Speed () {
     if (Base_Speed <= 60) {
         Base_Left_Speed = Base_Speed - 1
         Base_Right_Speed = Base_Speed - 0
-        Kp = 18
+        Kp = 23
         Kd = 170
         Kt = 1.5
     } else if (Base_Speed <= 70) {
         Base_Left_Speed = Base_Speed - 2
         Base_Right_Speed = Base_Speed - 0
-        Kp = 22
+        Kp = 27
         Kd = 170
         Kt = 2.5
     } else if (Base_Speed <= 80) {
         Base_Left_Speed = Base_Speed - 3
         Base_Right_Speed = Base_Speed - 0
-        Kp = 27
+        Kp = 32
         Kd = 170
         Kt = 3.5
     } else if (Base_Speed <= 90) {
         Base_Left_Speed = Base_Speed - 5
         Base_Right_Speed = Base_Speed - 0
-        Kp = 32
+        Kp = 37
         Kd = 170
         Kt = 4.5
     } else {
         Base_Left_Speed = Base_Speed - 8
         Base_Right_Speed = Base_Speed - 0
-        Kp = 37
+        Kp = 42
         Kd = 50
         Kt = 5.5
     }
@@ -402,9 +402,9 @@ let Slow_Speed = 0
 let ACC_Speed = 0
 let Speed = 0
 iBIT.setADC_Address(adcAddress.iBIT_V2)
-Speed = 95
-ACC_Speed = 85
-Slow_Speed = 70
+Speed = 90
+ACC_Speed = 80
+Slow_Speed = 65
 Base_Speed = Speed
 Turn_Speed = Base_Speed
 DistanceRef = 15
