@@ -331,32 +331,32 @@ function Initial_Speed () {
     if (Base_Speed <= 60) {
         Base_Left_Speed = Base_Speed - 1
         Base_Right_Speed = Base_Speed - 0
-        Kp = 14
-        Kd = 160
+        Kp = 18
+        Kd = 170
         Kt = 1.5
     } else if (Base_Speed <= 70) {
         Base_Left_Speed = Base_Speed - 2
         Base_Right_Speed = Base_Speed - 0
-        Kp = 18
-        Kd = 160
+        Kp = 22
+        Kd = 170
         Kt = 2.5
     } else if (Base_Speed <= 80) {
         Base_Left_Speed = Base_Speed - 3
         Base_Right_Speed = Base_Speed - 0
-        Kp = 23
-        Kd = 160
+        Kp = 27
+        Kd = 170
         Kt = 3.5
     } else if (Base_Speed <= 90) {
         Base_Left_Speed = Base_Speed - 5
         Base_Right_Speed = Base_Speed - 0
-        Kp = 28
-        Kd = 160
+        Kp = 32
+        Kd = 170
         Kt = 4.5
     } else {
         Base_Left_Speed = Base_Speed - 8
         Base_Right_Speed = Base_Speed - 0
-        Kp = 33
-        Kd = 40
+        Kp = 37
+        Kd = 50
         Kt = 5.5
     }
 }
