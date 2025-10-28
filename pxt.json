@@ -1,0 +1,29 @@
+{
+    "name": "*Final real version* Robotic Competition Line following Code with PID 2025 - Copy - Copy",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5",
+        "iBIT2": "github:inexglobal/pxt-iBit2#d58be9a47861689c825d36ed4fb51733cd9286f5"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "8.0.18",
+        "pxt": "5.15.10",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
